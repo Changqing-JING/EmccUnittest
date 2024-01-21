@@ -8,3 +8,11 @@ TEST(TestMyLib, TestFoo) {
 
   ASSERT_NE(res, 0);
 }
+
+TEST(TestMyLib, TestGoo) {
+  MyLib myLib;
+
+  int const res = myLib.goo();
+
+  ASSERT_NE(res, 0);
+}

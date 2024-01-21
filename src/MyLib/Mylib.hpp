@@ -5,6 +5,8 @@ class MyLib {
 
 public:
   int foo() noexcept;
+
+  int goo() noexcept;
 };
 
 #endif

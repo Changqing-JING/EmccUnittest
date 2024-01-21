@@ -10,3 +10,12 @@ int MyLib::foo() noexcept {
     return 2;
   }
 }
+
+int MyLib::goo() noexcept {
+  int *a = new int();
+
+  delete a;
+  // Will trigger address sanitizer failure
+  *a = 5;
+  return *a;
+}
